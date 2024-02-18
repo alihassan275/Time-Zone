@@ -1,0 +1,347 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+.navbar {
+  background-color: white;
+  box-shadow: 0px 0px 7px 0px;
+}
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+nav a img {
+  padding-right: 200px;
+}
+
+nav ul li {
+  padding: 0 15px;
+}
+.nav-link {
+  font-size: 20px;
+  color: #000;
+  transition: 0.4s ease;
+}
+.nav-link:hover {
+  color: red;
+}
+/* end nav */
+
+.home .left {
+  padding-top: 380px;
+}
+
+.button {
+  padding-top: 250px;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb ";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.clocks .photo-card img {
+  position: relative;
+}
+.clocks .photo-card span {
+  position: absolute;
+  bottom: 0;
+  z-index: 300;
+}
+
+.clocks .cards {
+  margin-top: 50px;
+}
+.text-card h3 {
+  padding: 15px 0;
+  padding-left: 30px;
+}
+.text-card span {
+  padding-left: 130px;
+  font-size: 18px;
+}
+.text-card {
+  justify-content: center;
+  align-items: center;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.home h1 {
+  font-size: 100px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.home .left p {
+  width: 700px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.home {
+  position: relative;
+  height: 900px;
+  background-color: #f0f0f2;
+  margin-bottom: 300px;
+}
+
+.home .right img {
+  position: absolute;
+  padding-top: 100px;
+  right: 40;
+  height: 900px;
+}
+/* end home  */
+
+/* start products */
+.right-watch {
+  padding-left: 85px;
+}
+.new-product-area .row .product-img img {
+  width: 380px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.new-product-area .row .product-img img:hover {
+  transform: scale(1.1);
+}
+
+.product-caption span {
+  color: red;
+}
+.new-product-area {
+  padding-bottom: 50px;
+}
+
+/* end products */
+
+/* start popular  */
+
+.gallery-area .single-gallery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(1, 10, 28, 0.3);
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.4s ease-out 0s;
+}
+/* */
+
+.photo-card img {
+  position: relative;
+}
+.photo-card i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 500;
+}
+
+.popular .text-center p {
+  color: #777;
+}
+.popular .text-center {
+  margin-top: 50px;
+}
+
+/* end popular  */
+
+.more-product .button {
+  margin-top: 100px;
+  width: 300px;
+  border-radius: 0;
+  margin-bottom: 100px;
+}
+
+.video-area::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: rgba(2, 5, 12, 0.5);
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.4s ease-out 0s;
+}
+.video-area {
+  margin-top: 50px;
+  background-image: url(../Image/gallery3.png.webp);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.watches {
+  margin-top: 250px;
+}
+
+.watches .watch-details p {
+  width: 500px;
+  padding-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #777;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.watch-details h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+.watch-details .button {
+  width: 220px;
+}
+
+.favourits .all-number .one {
+  padding: 30px 20px;
+}
+.favourits .all-number h6 {
+  font-size: 25px;
+}
+.favourits .all-number p {
+  width: 350px;
+}
+.favourits .all-number i {
+  font-size: 50px;
+  padding-bottom: 15px;
+}
+.favourits .all-number {
+  background-color: red;
+  color: white;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: #777;
+  transition: 0.3s ease;
+}
+footer li:hover {
+  color: red;
+  padding-left: 5px;
+}
+footer h4 {
+  font-size: 22px;
+  padding-left: 30px;
+}
+
+.footer-pera p {
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+
+.footer-social a i {
+  color: #222222;
+  font-size: 14px;
+  padding: 30px 10px;
+  transition: all 0.4s ease-out 0s;
+  transform: rotateY(0deg);
+}
+.footer-social a i:hover {
+  color: #ff2020;
+  transform: rotateY(180deg);
+}
